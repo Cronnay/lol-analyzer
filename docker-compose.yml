@@ -41,3 +41,15 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  kafka-topics-creator:
+    build:
+      context: kafka-topic-creator
+      dockerfile: Dockerfile
+    container_name: kafka-topics-creator
+    depends_on:
+      - zookeeper
+      - kafka
+    environment:
+      ZOOKEEPER_HOSTS: "zookeeper:2181"
+      KAFKA_TOPICS: "matches players"

@@ -1,4 +1,4 @@
-# LOL Analyzer
+# LOL Crawler
 
 This project is a proof of concept. The entire project is to easily display how we can (try) to fetch ALL games and store the data.
 

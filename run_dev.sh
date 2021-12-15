@@ -1,1 +1,1 @@
-go build && ./crawler
+go build && ./lol-crawler

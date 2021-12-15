@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/cronnay/lol-analyzer/crawler/pubsub"
+	"github.com/cronnay/lol-crawler/pubsub"
 	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

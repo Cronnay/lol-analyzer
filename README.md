@@ -5,6 +5,7 @@ This project is a proof of concept. The entire project is to easily display how 
 ## Issues that are not handled (Its a PoC)
 * Rate limit (Can only handle 100 req every 2 mins)
 * Doesn't handle multiple regions at the same time
+* Doesn't put player/match into queue if something fails
 * Messy code
 
 
@@ -17,10 +18,10 @@ When starting the projects, it starts a 2x Kafka Producers and 2x Kafka Consumer
 
 ## How do I get started?
 1. Generate API-key from Riot Games. URL: https://developer.riotgames.com/
-2. `git clone https://github.com/Cronnay/lol-analyzer.git`
-3. `cd lol-analyzer`
+2. `git clone https://github.com/Cronnay/lol-crawler.git`
+3. `cd lol-crawler`
 4. `cp example.env .env`. Add your API-key. Update Riot URLs if not EUW
 5. `docker-compose up`
-6. `./run_dev.sh` or `go build && ./crawler`
+6. `./run_dev.sh` or `go build && ./lol-crawler`
 7. When you are getting error 429 its because of rate limit. 
 8. Visit http://localhost:8081/db/lol_analyzer/ to have a look at the data

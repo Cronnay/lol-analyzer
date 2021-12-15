@@ -1,4 +1,4 @@
-module github.com/cronnay/lol-analyzer/crawler
+module github.com/cronnay/lol-crawler
 
 go 1.16
 

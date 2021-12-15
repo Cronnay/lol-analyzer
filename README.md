@@ -1,6 +1,6 @@
 # LOL Crawler
 
-This project is a proof of concept. The entire project is to easily display how we can (try) to fetch ALL games and store the data.
+This project is a proof of concept. The entire project is to easily display how we can (try) to fetch ALL games and store the data. As of now, there is no way easy way to get information from ALL games, or get games from a specific league/timestamp or whatever. This is a solution
 
 ## Issues that are not handled (Its a PoC)
 * Rate limit (Can only handle 100 req every 2 mins)
